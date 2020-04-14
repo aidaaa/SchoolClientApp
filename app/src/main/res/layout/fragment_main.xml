@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+        <Button
+            android:id="@+id/insert_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insert Class" />
+
+    <Button
+        android:id="@+id/insert_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Lesson"
+        android:layout_below="@id/insert_class"/>
+
+    <Button
+        android:id="@+id/insert_Student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Student"
+        android:layout_below="@id/insert_lesson"/>
+
+    <Button
+        android:id="@+id/insert_disciplinary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Disciplinary"
+        android:layout_below="@id/insert_Student"/>
+
+</RelativeLayout>

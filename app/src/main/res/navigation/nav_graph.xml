@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/insertClassFragment"
+        android:name="com.example.android.schoolclientapp.cases.insert.InsertClassFragment"
+        android:label="fragment_insert_class"
+        tools:layout="@layout/fragment_insert_class" />
+    <fragment
+        android:id="@+id/insertDisciplinaryFragment"
+        android:name="com.example.android.schoolclientapp.cases.insert.InsertDisciplinaryFragment"
+        android:label="fragment_insert_disciplinary"
+        tools:layout="@layout/fragment_insert_disciplinary" />
+    <fragment
+        android:id="@+id/insertLessonFragment"
+        android:name="com.example.android.schoolclientapp.cases.insert.InsertLessonFragment"
+        android:label="fragment_insert_lesson"
+        tools:layout="@layout/fragment_insert_lesson" />
+    <fragment
+        android:id="@+id/insertStudentFragment"
+        android:name="com.example.android.schoolclientapp.cases.insert.InsertStudentFragment"
+        android:label="fragment_insert_student"
+        tools:layout="@layout/fragment_insert_student" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.android.schoolclientapp.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_insertStudentFragment"
+            app:destination="@id/insertStudentFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_insertLessonFragment"
+            app:destination="@id/insertLessonFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_insertClassFragment"
+            app:destination="@id/insertClassFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_insertDisciplinaryFragment"
+            app:destination="@id/insertDisciplinaryFragment" />
+    </fragment>
+</navigation>
