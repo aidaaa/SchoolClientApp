@@ -1,4 +1,4 @@
-package com.example.android.schoolclientapp.cases.insert;
+package com.example.android.schoolclientapp.view.cases.insert;
 
 
 import android.os.Bundle;
@@ -18,14 +18,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.example.android.schoolclientapp.R;
-import com.example.android.schoolclientapp.adapter.InsertClassFragmentAdapter;
-import com.example.android.schoolclientapp.room.model.Classes;
+import com.example.android.schoolclientapp.view.adapter.InsertClassFragmentAdapter;
+import com.example.android.schoolclientapp.model.model.Classes;
 import com.example.android.schoolclientapp.viewmodel.MainViewModel;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -49,6 +46,7 @@ public class InsertClassFragment extends Fragment implements View.OnClickListene
         super.onViewCreated(view, savedInstanceState);
         navController= Navigation.findNavController(view);
         mainViewModel= ViewModelProviders.of(this).get(MainViewModel.class);
+        mainViewModel.init();
 
         fragment_insert_class_rv=view.findViewById(R.id.fragment_insert_class_rv);
         fragment_insert_class_edt=view.findViewById(R.id.fragment_insert_class_edt);
@@ -59,9 +57,10 @@ public class InsertClassFragment extends Fragment implements View.OnClickListene
         final InsertClassFragmentAdapter adapter=new InsertClassFragmentAdapter();
         fragment_insert_class_rv.setAdapter(adapter);
 
-        mainViewModel.getAllClass().observe(getViewLifecycleOwner(), new Observer<List<Classes>>() {
+        mainViewModel.getAllClassRetrofit().observe(getViewLifecycleOwner(), new Observer<List<Classes>>() {
             @Override
             public void onChanged(List<Classes> classes) {
+                if (!classes.isEmpty())
                 adapter.setClassesList(classes);
             }
         });
@@ -78,7 +77,7 @@ public class InsertClassFragment extends Fragment implements View.OnClickListene
                if (!TextUtils.isEmpty(className))
                {
                    Classes classes=new Classes(className);
-                   mainViewModel.insertClass(classes);
+                   mainViewModel.insertClassRetrofit(classes);
                }
                break;
        }

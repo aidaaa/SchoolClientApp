@@ -1,4 +1,4 @@
-package com.example.android.schoolclientapp.cases.insert;
+package com.example.android.schoolclientapp.view.cases.insert;
 
 
 import android.os.Bundle;

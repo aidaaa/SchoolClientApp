@@ -1,4 +1,4 @@
-package com.example.android.schoolclientapp.room.model;
+package com.example.android.schoolclientapp.model.model;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

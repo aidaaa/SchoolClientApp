@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/insertClassFragment"
-        android:name="com.example.android.schoolclientapp.cases.insert.InsertClassFragment"
+        android:name="com.example.android.schoolclientapp.view.cases.insert.InsertClassFragment"
         android:label="fragment_insert_class"
         tools:layout="@layout/fragment_insert_class" />
     <fragment
         android:id="@+id/insertDisciplinaryFragment"
-        android:name="com.example.android.schoolclientapp.cases.insert.InsertDisciplinaryFragment"
+        android:name="com.example.android.schoolclientapp.view.cases.insert.InsertDisciplinaryFragment"
         android:label="fragment_insert_disciplinary"
         tools:layout="@layout/fragment_insert_disciplinary" />
     <fragment
         android:id="@+id/insertLessonFragment"
-        android:name="com.example.android.schoolclientapp.cases.insert.InsertLessonFragment"
+        android:name="com.example.android.schoolclientapp.view.cases.insert.InsertLessonFragment"
         android:label="fragment_insert_lesson"
         tools:layout="@layout/fragment_insert_lesson" />
     <fragment
         android:id="@+id/insertStudentFragment"
-        android:name="com.example.android.schoolclientapp.cases.insert.InsertStudentFragment"
+        android:name="com.example.android.schoolclientapp.view.cases.insert.InsertStudentFragment"
         android:label="fragment_insert_student"
         tools:layout="@layout/fragment_insert_student" />
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.android.schoolclientapp.MainFragment"
+        android:name="com.example.android.schoolclientapp.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action

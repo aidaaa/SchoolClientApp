@@ -1,19 +1,17 @@
-package com.example.android.schoolclientapp.room.repository;
+package com.example.android.schoolclientapp.model.room.repository;
 
 //C:\Users\MAJID-PC\AndroidStudioProjects\DataBinding\app\src\main\java\com\example\android\databinding\old
 
 import android.content.Context;
 import android.os.AsyncTask;
-import android.util.AndroidException;
-import android.widget.Toast;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.android.schoolclientapp.room.dao.SchoolDao;
-import com.example.android.schoolclientapp.room.db.SchoolDataBase;
-import com.example.android.schoolclientapp.room.model.Classes;
-import com.example.android.schoolclientapp.room.model.Lessons;
-import com.example.android.schoolclientapp.room.model.Students;
+import com.example.android.schoolclientapp.model.room.dao.SchoolDao;
+import com.example.android.schoolclientapp.model.room.db.SchoolDataBase;
+import com.example.android.schoolclientapp.model.model.Classes;
+import com.example.android.schoolclientapp.model.model.Lessons;
+import com.example.android.schoolclientapp.model.model.Students;
 
 import java.util.List;
 

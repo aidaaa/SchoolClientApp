@@ -1,7 +1,6 @@
-package com.example.android.schoolclientapp.room.model;
+package com.example.android.schoolclientapp.model.model;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -16,9 +15,10 @@ public class Classes
     private String class_name;
 
     public Classes(String class_name) {
-        this.class_name = class_name;
+    this.class_name = class_name;
+}
+    public Classes() {
     }
-
     public String getClass_name() {
         return class_name;
     }

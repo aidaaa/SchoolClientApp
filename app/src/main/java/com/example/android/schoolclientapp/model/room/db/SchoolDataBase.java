@@ -1,4 +1,4 @@
-package com.example.android.schoolclientapp.room.db;
+package com.example.android.schoolclientapp.model.room.db;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -9,10 +9,10 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.example.android.schoolclientapp.room.dao.SchoolDao;
-import com.example.android.schoolclientapp.room.model.Classes;
-import com.example.android.schoolclientapp.room.model.Lessons;
-import com.example.android.schoolclientapp.room.model.Students;
+import com.example.android.schoolclientapp.model.room.dao.SchoolDao;
+import com.example.android.schoolclientapp.model.model.Classes;
+import com.example.android.schoolclientapp.model.model.Lessons;
+import com.example.android.schoolclientapp.model.model.Students;
 
 @Database(entities = {Classes.class, Lessons.class, Students.class} , version = 1)
 public abstract class SchoolDataBase extends RoomDatabase

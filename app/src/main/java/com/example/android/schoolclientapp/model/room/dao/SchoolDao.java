@@ -1,13 +1,13 @@
-package com.example.android.schoolclientapp.room.dao;
+package com.example.android.schoolclientapp.model.room.dao;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
 
-import com.example.android.schoolclientapp.room.model.Classes;
-import com.example.android.schoolclientapp.room.model.Lessons;
-import com.example.android.schoolclientapp.room.model.Students;
+import com.example.android.schoolclientapp.model.model.Classes;
+import com.example.android.schoolclientapp.model.model.Lessons;
+import com.example.android.schoolclientapp.model.model.Students;
 
 import java.util.List;
 

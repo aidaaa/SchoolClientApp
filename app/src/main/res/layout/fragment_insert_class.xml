@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".cases.insert.InsertClassFragment">
+    tools:context=".view.cases.insert.InsertClassFragment">
 
     <EditText
         android:id="@+id/fragment_insert_class_edt"

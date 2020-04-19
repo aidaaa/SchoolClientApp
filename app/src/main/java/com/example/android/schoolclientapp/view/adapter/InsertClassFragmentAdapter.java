@@ -1,4 +1,4 @@
-package com.example.android.schoolclientapp.adapter;
+package com.example.android.schoolclientapp.view.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.android.schoolclientapp.R;
-import com.example.android.schoolclientapp.room.model.Classes;
+import com.example.android.schoolclientapp.model.model.Classes;
 
 import java.util.ArrayList;
 import java.util.List;
